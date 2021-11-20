@@ -1,0 +1,943 @@
+header {
+    margin-top: 10px;
+}
+
+header ul {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 25px;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+header div li {
+    display: inline-block;
+    position: relative;
+    padding: 6px;
+}
+
+header div li ul {
+    float: center;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    width: 200px;
+    display: none;
+    z-index: 8888;
+    cursor: pointer;
+}
+
+header div li:hover ul {
+    display: block;
+}
+
+header div li ul li {
+    width: 100%;
+    text-decoration: none;
+    background: #0623a1d8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header div li ul li a {
+    margin-top: 0px;
+    bottom: 0px;
+    padding: 0px;
+    color: white;
+    ;
+}
+
+header div li ul li a:hover {
+    background: #d5d6d6;
+    text-decoration: none;
+    color: blue;
+}
+
+header div ul li a {
+    display: block;
+    padding: 1px;
+    font-size: 1.0rem;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(10, 2, 2);
+}
+
+.nav {
+    width: 100%;
+    height: 45px;
+    background: #132ba3;
+    font-size: 1.0rem;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.0rem;
+    animation-name: nav-background;
+    animation-duration: 5s;
+}
+
+@keyframes nav-background {
+    from {
+        background: #0d67a3;
+    }
+    to {
+        background: #ac354e;
+    }
+}
+
+.language {
+    margin-top: 2px;
+    padding: 5px;
+}
+
+.input-search {
+    border-radius: 0px;
+    margin: 2px;
+    padding-bottom: 0px;
+    background: white;
+    border-radius: 1px;
+}
+
+.search {
+    border: none;
+    border-radius: 2px;
+    margin-top: 0px;
+    font-size: 1.0rem;
+}
+
+.slider {
+    width: 1050px;
+    top: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+/* Nội dung*/
+
+.khoa-cntt {
+    margin: 30px 30px 30px 50px;
+    width: 260px;
+    font-size: 2.0rem;
+    font-family: inherit;
+    color: #3315db;
+    padding-bottom: 0px;
+}
+
+.khoa-cntt .title-khoa {
+    color: #006669;
+}
+
+.khoa-cntt .menu-phu {
+    width: 100%;
+    border: 1px solid bisque;
+}
+
+.khoa-cntt .menu-phu a {
+    text-decoration: none;
+}
+
+.khoa-cntt .menu-phu a h5:hover {
+    color: #ce323f;
+}
+
+.thongtin-thongbao {
+    margin: 10px;
+    width: 500px;
+    font-family: inherit;
+    font-size: 1.0rem;
+}
+
+.thongtin-thongbao a:hover {
+    text-decoration: none;
+}
+
+.thongtin-thongbao .thongbao {
+    width: 98%;
+    margin: 7px;
+    height: 75px;
+    border-bottom: 1px solid bisque;
+}
+
+.thongtin-thongbao .thongbao .anh-thongbao {
+    width: 80px;
+    height: 75px;
+    border: 1px solid #d8f4f5;
+}
+
+.thongtin-thongbao .thongbao .tieude-thongbao {
+    width: 100%;
+    height: 25px;
+    margin: 10px;
+    font-size: 1.0rem;
+}
+
+.thongtin-thongbao .thongbao .tieude-thongbao:hover {
+    color: #e22dbb;
+    text-decoration: none;
+}
+
+.thongtin-thongbao .time-thongbao {
+    margin-left: 10px;
+    color: black;
+}
+
+.tuyendung-vieclam {
+    margin-top: 50px;
+    margin-left: 420px;
+    margin-bottom: 50px;
+    width: 900px;
+    height: 370px;
+    font-family: inherit;
+    font-size: 1.0rem;
+}
+
+.tuyendung-vieclam a:hover {
+    text-decoration: none;
+}
+
+.tuyendung-vieclam .content-tuyendung {
+    margin-left: 30px;
+}
+
+.tuyendung-vieclam .content-tuyendung .anh-tuyendung {
+    width: 80px;
+    height: 80px;
+}
+
+.tuyendung-vieclam .content-tuyendung .tieude-tuyendung {
+    margin: 10px;
+    font-size: 1.0rem;
+    text-decoration: none;
+}
+
+.tuyendung-vieclam .content-tuyendung .tieude-tuyendung:hover {
+    color: #d3602b;
+}
+
+.tuyendung-vieclam .content-tuyendung .tuyendung {
+    border-bottom: 1px solid bisque;
+    width: 98%;
+    height: 80px;
+    font-size: 1.0rem;
+    text-decoration: none;
+}
+
+.tuyendung-vieclam .content-tuyendung .time-tuyendung {
+    margin: 10px;
+    padding-bottom: 5px;
+}
+
+.xem-them {
+    float: right;
+}
+
+.thongtin-lienhe {
+    margin: 30px 30px 30px -15.5px;
+    width: 260px;
+    height: 280px;
+    font-size: 2.0rem;
+    font-family: inherit;
+    color: #3315db;
+    padding-bottom: 0px;
+}
+
+.thongtin-lienhe .diachi {
+    margin-left: 2px;
+    border: 1px solid bisque;
+}
+
+.fb-page {
+    margin: 0px;
+}
+
+
+/* Tin tức dự kiện*/
+
+.page-wrapper {
+    min-height: 50%;
+}
+
+.page-wrapper a:hover {
+    color: #006669;
+    text-decoration: none;
+}
+
+
+/*POST SLIDER */
+
+.post-slider {
+    position: relative;
+}
+
+.post-slider .slider-title {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.post-slider .next {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 2em;
+    color: #006669;
+    cursor: pointer;
+}
+
+.post-slider .prev {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2em;
+    color: #006669;
+    cursor: pointer;
+}
+
+.post-slider .post-wrapper {
+    width: 90%;
+    height: 300px;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+
+.post-slider .post-wrapper .post {
+    width: 300px;
+    height: 250px;
+    margin: 0px 10px;
+    display: inline-block;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
+}
+
+.post-slider .post-wrapper .post .post-info {
+    height: 100px;
+    padding: 0px 5px;
+}
+
+.post-slider .post-wrapper .post .slider-image {
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+/*Đường dẫn*/
+
+.duong-dan {
+    width: 1200px;
+    margin: 10px;
+    height: 30px;
+    padding-left: 40px;
+    background: #227dd3;
+    color: #ad2222;
+}
+
+.duong-dan a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.duong-dan a:hover {
+    color: #3242ce;
+}
+
+
+/*Giới thiệu*/
+
+.gioi-thieu {
+    margin: 20px;
+}
+
+.gioi-thieu .anh-gt {
+    width: 600px;
+    height: 175px;
+}
+
+.gioi-thieu .anh-gt img {
+    width: 100%;
+}
+
+.content-gt {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 700px;
+    height: 420;
+}
+
+.conten-gt .title-gioithieu {
+    font-weight: 200;
+}
+
+
+/*Loi chao mung*/
+
+.content-lcm {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 800px;
+}
+
+.anh-cm {
+    width: 500px;
+    height: 431px;
+}
+
+.anh-cm img {
+    width: 100%;
+}
+
+.anh-cm a h5 {
+    text-decoration: none;
+    color: #006669;
+}
+
+.anh-cm h5 {
+    margin-left: 50px;
+}
+
+
+/*So do to chuc khoa*/
+
+.content-tochuc {
+    margin: 20px;
+    margin-left: 30px;
+    width: 700px;
+    height: 500px;
+}
+
+.content-tochuc img {
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.tochuc {
+    margin: 30px;
+    width: 850px;
+    height: 2500px;
+}
+
+.tochuc img {
+    margin: 15px;
+    width: 40%;
+    height: 8%;
+}
+
+.tochuc h6 {
+    margin: 10px;
+    padding: 3px;
+}
+
+.tochuc h6 span {
+    color: #0d4f6e;
+}
+
+
+/*hợp tác liên kết*/
+
+.hoptaclienket {
+    margin: 25px;
+    width: 750px;
+    height: 2570px;
+}
+
+.hoptaclienket img {
+    width: 750px;
+}
+
+.hoptaclienket h6 {
+    margin: 7px;
+    padding: 3px;
+}
+
+
+/* Liên hệ*/
+
+.menu-lienhe {
+    margin: 10px;
+    width: 450px;
+    height: 580px;
+}
+
+.menu-lienhe .diachi-lienhe {
+    margin: 10px;
+    width: 400px;
+    height: 120px;
+}
+
+.menu-lienhe .diachi-lienhe img {
+    width: 80px;
+    height: 80px;
+}
+
+.menu-lienhe .diachi-lienhe .dienthoai {
+    margin-top: 10px;
+}
+
+.menu-lienhe .diachi-lienhe .mail {
+    margin-top: 20px;
+}
+
+.menu-lienhe .diachi-lienhe h5 {
+    color: gray;
+    margin: 5px;
+}
+
+.bando {
+    margin: 10px;
+    float: right;
+    width: 605px;
+    height: 455px;
+}
+
+
+/*Logo-Khoa*/
+
+.logo-khoa {
+    margin: 30px;
+    width: 600px;
+    height: 800px;
+}
+
+.logo-khoa .anh-logo {
+    margin: 15px;
+    width: 550px;
+    height: 320px;
+}
+
+.logo-khoa .anh-logo img {
+    width: 75%;
+}
+
+.menu-gioithieu {
+    margin-left: 100px;
+    padding: 10px;
+    float: right;
+    width: 250px;
+    height: 200px;
+}
+
+.menu-gioithieu .menu-gt {
+    width: 200px;
+    color: #ad2222;
+    border: 1px solid bisque;
+}
+
+.menu-gioithieu .menu-gt:hover {
+    background: #e7c9c9;
+}
+
+.menu-gioithieu .menu-gt a {
+    color: #15663a;
+    text-decoration: none;
+}
+
+.menu-gioithieu .menu-gt a h5 {
+    color: #0d4f6e;
+}
+
+.vetrangchu a {
+    float: right;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+.vetrangchu a:hover {
+    color: #e26918;
+}
+
+
+/*listthong bao*/
+
+.khoa-cntt-thongbao {
+    margin: 30px 30px 30px 0px;
+    width: 260px;
+    height: 280px;
+    font-size: 2.0rem;
+    font-family: inherit;
+    color: #3315db;
+    padding-bottom: 0px;
+}
+
+.khoa-cntt-thongbao .title-khoa {
+    color: #006669;
+}
+
+.khoa-cntt-thongbao .menu-phu {
+    width: 100%;
+    border: 1px solid bisque;
+}
+
+.khoa-cntt-thongbao .menu-phu a {
+    text-decoration: none;
+}
+
+.khoa-cntt-thongbao .menu-phu a h5:hover {
+    color: #ce323f;
+}
+
+.listthongbao {
+    margin: 5px;
+}
+
+.listthongbao .thongbaoday {
+    margin: 5px;
+    width: 850px;
+    height: 100px;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.listthongbao .thongbaoday a h6 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.listthongbao .thongbaoday a:hover {
+    text-decoration: none;
+}
+
+.listthongbao .thongbaoday div {
+    color: #919494;
+}
+
+.list-page {
+    float: right;
+    margin: 20px;
+    padding: 10px;
+    width: 220px;
+    height: 50px;
+}
+
+.list-page a {
+    margin: 5px;
+    padding: 1px;
+    width: 20px;
+    height: 5px;
+    text-decoration: none;
+    border: 1px solid gray;
+}
+
+.list-page a:hover {
+    background: #d562;
+}
+
+.list-page a.dau {
+    background: #6666;
+}
+
+
+/*thongbao*/
+
+.content-thongbao {
+    margin: 20px;
+    padding: 5px;
+    width: 850px;
+}
+
+.table tr td strong a {
+    text-decoration: none;
+    color: #122eca;
+}
+
+
+/* tin tức*/
+
+.listtintuc {
+    margin: 5px;
+    width: 950px;
+}
+
+.listtintuc .tintuc {
+    width: 900px;
+    border-bottom: 1px solid gray;
+}
+
+.listtintuc .tintuc .anh-tin img {
+    width: 120px;
+    height: 120px;
+}
+
+.listtintuc .tintuc .content-tin {
+    margin-left: 10px;
+}
+
+.listtintuc .tintuc .content-tin a {
+    text-decoration: none;
+}
+
+.listtintuc .tintuc .content-tin a h6:hover {
+    color: #cf8728;
+}
+
+
+/* Sinh vien*/
+
+.sinhvien .content .content-sinhvien {
+    margin: 10px;
+    width: 700px;
+    height: 70px;
+    margin-left: 50px;
+    border-bottom: 1px solid gray;
+}
+
+.sinhvien h4 strong a {
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.sinhvien h6 strong a {
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.sinhvien .content {
+    margin-bottom: 30px;
+}
+
+.sinhvien .content-sinhvien a {
+    text-decoration: none;
+}
+
+.sinhvien .content .content-sinhvien a h5 {
+    margin: 10px;
+    color: #000a3d;
+}
+
+.sinhvien .content .content-sinhvien a h5:hover {
+    color: #dd8c13;
+}
+
+.sinhvien .content .content-sinhvien a h6 {
+    float: right;
+    margin-right: 40px;
+    color: #000a3d;
+}
+
+.sinhvien .content .content-sinhvien a h6:hover {
+    color: #0d2ab8;
+}
+
+.sinhvien .menu-sinhvien {
+    margin: 10px;
+}
+
+.sinhvien .menu-sinhvien a h5 strong {
+    text-decoration: none;
+}
+
+.sinhvien .menu-sinhvien .menu a {
+    text-decoration: none;
+    border-bottom: 1px solid bisque;
+}
+
+.sinhvien .menu-sinhvien .menu a h6:hover {
+    background: #ffffff;
+    color: #071c88;
+}
+
+
+/* co van hoc tap*/
+
+.covanhoctap {
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.covanhoctap .content {
+    margin: 20px;
+}
+
+.covanhoctap .content .table {
+    border: 1px solid gray;
+}
+
+.covanhoctap .menu-sinhvien {
+    margin: 10px;
+}
+
+.covanhoctap .menu-sinhvien.menu {
+    margin: 20px;
+}
+
+.covanhoctap .menu-sinhvien .menu a {
+    text-decoration: none;
+}
+
+.covanhoctap .menu-sinhvien .menu a h6:hover {
+    color: #d15c0d;
+}
+
+
+/*Cong nghe phan mem*/
+
+.main-content {
+    margin: 15px;
+}
+
+.main-content .content-cnpm {
+    margin: 10px;
+    width: 800px;
+}
+
+.main-content .content-cnpm h6 {
+    margin: 10px;
+}
+
+.main-content .content-cnpm .anh {
+    margin-left: 90px;
+}
+
+.main-content .content-cnpm .table {
+    border: 1px solid gray;
+}
+
+.main-content .content-cnpm img {
+    margin: 10px;
+}
+
+.main-content .menu-bomon {
+    margin: 10px;
+}
+
+.main-content .menu-bomon .menu {
+    margin: 5px;
+}
+
+.main-content .menu-bomon .menu a {
+    text-decoration: none;
+}
+
+.main-content .menu-bomon .menu a h6 {
+    border-bottom: 1px solid bisque;
+    padding: 2px;
+}
+
+.main-content .menu-bomon .menu a h6:hover {
+    color: #7009f7;
+}
+
+
+/* Register*/
+
+.auth-content {
+    width: 30%;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgb(238, 241, 183);
+    border-radius: 5px;
+}
+
+.auth-content .text-input {
+    margin: 5px;
+    float: right;
+    margin-left: 10px;
+    width: 250px;
+}
+
+.auth-content .form-title {
+    text-align: center;
+}
+
+.auth-content form div {
+    margin-bottom: 10px;
+}
+
+.auth-content form p {
+    text-align: center;
+}
+
+.auth-content form p a {
+    text-decoration: underline;
+}
+
+
+/* CSE trên báo*/
+
+.content-trenbao {
+    width: 800px;
+    margin: 20px;
+}
+
+.content-trenbao h6 {
+    margin: 10px;
+    padding: 5px;
+}
+
+.content-trenbao img {
+    margin-left: 8px;
+}
+
+.content-trenbao .tittle-trenbao {
+    margin-left: 30px;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    background: #000a3d;
+    color: #9a99b8;
+    height: 350px;
+    position: relative;
+}
+
+.footer .footer-content {
+    height: 300px;
+    display: flex;
+}
+
+.footer .footer-content .footer-section {
+    flex: 1;
+    padding: 35px;
+}
+
+.footer .footer-content .links ul a {
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.0rem;
+    transition: all 0.3s;
+}
+
+.footer .footer-content .links ul a:hover {
+    color: white;
+    margin-left: 15px;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+@keyframes footer-bottom-background {
+    from {
+        background: #14cc9e;
+    }
+    to {
+        background: #c93c48;
+    }
+}
+
+.footer .footer-bottom {
+    font-size: 1.0rem;
+    background: #030e46;
+    color: white;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+    animation-name: footer-bottom-background;
+    animation-duration: 5s;
+}
